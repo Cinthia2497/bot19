@@ -17,25 +17,25 @@ def hola(mensaje):
 @bot.message_handler(commands=["metros","metro"]) 
 def Metros(mensaje):
     bot.send_chat_action(id, 'typing')
-    bot.send_message(id, "1 metro equivale a 100 centímetros (1m = 100cm)")
+    bot.send_message(id, "1 metro es 100 centímetros (1m = 100cm)")
     print("Mandaron metro , metros")
 
 @bot.message_handler(commands=["kilometros"])
 def Kilómetros(mensaje):
     bot.send_chat_action(id, 'typing')
-    bot.send_message(id, "1 kilómetro equivale a 1000 metros (1km = 1000m)")
+    bot.send_message(id, "1 kilómetro es 1000 metros (1km = 1000m)")
     print("Mandaron kilometros")
 
 @bot.message_handler(commands=["millas"])
 def Millas(mensaje):
     bot.send_chat_action(id, 'typing')
-    bot.send_message(id, "1 milla es igual a 1.609 kilometros")
+    bot.send_message(id, "1 milla es 1.609 kilometros")
     print("Mandaron millas")
 
 @bot.message_handler(commands=["pie"])
 def Pie(mensaje):
     bot.send_chat_action(id, 'typing')
-    bot.send_message(id, "1 pie = 12.00 pulgada")
+    bot.send_message(id, "1 pie es 12.00 pulgada")
     print("Mandaron pie")
 
 bot.polling()
